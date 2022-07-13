@@ -1,0 +1,26 @@
+##OpenGL GLIB 
+Perspective 70 
+LookAt 0 0 7  0 0 0  0 1 0 
+Timer 60 
+
+Texture2D  5    waves.bmp
+
+Vertex   gerstner.vert 
+Fragment gerstner.frag 
+Program  Gerstner                                               \
+        uTimeScale <1. 2. 100.>                                 \
+        uBlend <0. 0. 1.>                                       \
+        uAm0 <0. .2 1.> uKm0 <0.1 1. 5.>                        \
+        uGamma0 <-1.57080 0. 1.57080>                           \
+        uAm1 <0. 0. 1.> uKm1 <0.1 2. 5.> uPhiM1 <0. 0. 6.28>    \
+        uGamma1 <-1.57080 0. 1.57080>                           \
+        uLightX <-20. 0. 20.>                                   \
+        uLightY <1. 10. 20.>                                    \
+        uLightZ <-20. -20. 20.>                                 \
+        uKa <0. .1 1.> uKd <0. .6 1.> uKs <0. .3 1.>            \
+        uShininess < 1. 2. 200.>                                \
+        uColor {.1 1. .8 1.} uNoiseAmp <0. 0. 1.>               \
+        uNoiseFreq <.1 .1 2.> 
+            
+Scale   1
+QuadXZ  0.  3.  300  300
